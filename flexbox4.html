@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementasi layout flexbox4</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .header{
+            background-color: aquamarine;
+            height: 100px;
+        }
+        .main{
+            background-color: chartreuse;
+            height: 400px;
+            display: flex;
+        }
+        .footer{
+            background-color: aquamarine;
+            height: 100px;
+        }
+        .aside{
+            background-color: aqua;
+            width: 20%;
+        }
+        .article{
+            background-color: hotpink;
+            width: 80%;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+        .bingkai{
+            display: flex;
+            justify-content: center;
+        }
+        .bingkai img{
+            margin: 0.5em;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            header 
+        </div>
+        <div class="main">
+            <div class="aside">
+                aside
+            </div>
+
+            <div class="article">
+                <h3>Article</h3>
+                <div class="bingkai">
+                    <img src="download.png" alt="">
+                    <img src="download.png" alt="">
+                    <img src="download.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <footer></footer>
+        </div>
+    </div>
+</body>
+</html>
